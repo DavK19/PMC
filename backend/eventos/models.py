@@ -1,7 +1,5 @@
 from django.db import models
 
-from django.db import models
-
 class Usuario(models.Model):
     nombre = models.CharField(max_length=10, unique=True)
     correo = models.EmailField(unique=True)
@@ -10,8 +8,6 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.nombre
-
-from django.db import models
 
 class Evento(models.Model):
     nombre = models.CharField(max_length=100)

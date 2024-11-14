@@ -1,0 +1,45 @@
+[
+    {
+        "model": "eventos.usuario",
+        "pk": 1,
+        "fields": {
+            "nombre": "admin",
+            "correo": "admin@ejemplo.com",
+            "contrasena": "123456",
+            "eventos": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "eventos.evento",
+        "pk": 1,
+        "fields": {
+            "nombre": "Concierto de Rock",
+            "descripcion": "Gran concierto de rock en la ciudad",
+            "fecha": "2024-11-20T18:00:00Z",
+            "latitud": 4.6014026,
+            "longitud": -74.064905,
+            "calificacion": 4.5,
+            "usuarios": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "eventos.evento",
+        "pk": 2,
+        "fields": {
+            "nombre": "Festival de Jazz",
+            "descripcion": "Festival anual de jazz en el parque central",
+            "fecha": "2024-12-05T20:00:00Z",
+            "latitud": 4.6014026,
+            "longitud": -74.064905,
+            "calificacion": 4.8,
+            "usuarios": [
+                1
+            ]
+        }
+    }
+]
